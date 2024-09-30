@@ -16,7 +16,7 @@ header {
 /* Hamburger Menu */
 .menu-icon {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     cursor: pointer;
 }
 
