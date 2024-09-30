@@ -18,13 +18,12 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
 /* Hamburger Menu */
 .menu-icon {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    margin-left: 20px;
+    margin-right: 20px; /* Move the menu icon to the right */
 }
 
 .menu-icon div {
@@ -33,6 +32,16 @@ header {
     background-color: white;
     margin: 6px 0;
 }
+
+/* Mobile Menu Handling */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #00BFFF;
+        position
 
 /* Sticky Footer */
 footer {
