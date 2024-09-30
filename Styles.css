@@ -1,14 +1,8 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: white;
-}
- 
 /* Sticky Header */
 header {
     background-color: #00BFFF; /* Bright blue */
     color: white;
-    padding: 10px 0;
+    padding: 10px 20px;
     text-align: center;
     font-size: 24px;
     position: sticky;
@@ -18,12 +12,12 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 /* Hamburger Menu */
 .menu-icon {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    margin-right: 20px; /* Move the menu icon to the right */
 }
 
 .menu-icon div {
@@ -32,16 +26,6 @@ header {
     background-color: white;
     margin: 6px 0;
 }
-
-/* Mobile Menu Handling */
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        background-color: #00BFFF;
-        position
 
 /* Sticky Footer */
 footer {
@@ -98,13 +82,24 @@ nav ul li a {
         width: 100%;
         background-color: #00BFFF;
         position: absolute;
-        top: 60px;
+        top: 60px; /* Positioned below header */
         left: 0;
+    }
+
+    nav ul.show {
+        display: flex;
     }
 
     nav ul li {
         padding: 10px;
         width: 100%;
         text-align: center;
+    }
+
+    /* Make the header more compact on mobile */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
     }
 }
