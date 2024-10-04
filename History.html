@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teamfit - History</title>
+    <link rel="stylesheet" href="Styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Progress</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="sidebar"></div>
+        <div class="content">
+            <a href="teamhistory">
+            <h1>Team history</h1>
+            </a>
+        </div>
+        <div class="sidebar"></div>
+    </div>
+
+    
+
+    <!-- Footer -->
+    <footer>
+        <p> TeamFit. </p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
