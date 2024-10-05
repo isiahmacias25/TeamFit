@@ -53,6 +53,13 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* CSS for a smaller background image on the right */
+body {
+    background-image: url('Photos/Weightroom.jpg');
+    background-size: 200px 150px; /* Set the width and height of the image */
+    background-position: right center; /* Aligns the image to the right and center vertically */
+}
+
 /* Sticky Footer */
 footer {
     background-color: #000;
