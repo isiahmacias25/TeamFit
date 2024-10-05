@@ -80,6 +80,11 @@ footer {
     width: 70%;
     padding: 20px;
 }
+.weightroom-image {
+    width: 10vw; /* 10% of the viewport width */
+    height: 10vh; /* 10% of the viewport height */
+    object-fit: contain; /* Maintain aspect ratio without distortion */
+}
 
 /* Mobile Menu Handling */
 @media (max-width: 768px) {
