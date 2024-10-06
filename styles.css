@@ -33,7 +33,17 @@ header {
     background-color: white;
     margin: 6px 0;
 }
+/* Hide the navigation by default on small screens */
+nav ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+}
 
+/* Make the navigation visible when the menu is toggled */
+nav ul.open {
+    display: block;
+    
 /* Mobile Menu (Hidden initially) */
 nav ul {
     display: flex;
