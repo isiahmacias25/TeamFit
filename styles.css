@@ -113,3 +113,38 @@ footer {
         flex-direction: row;
     }
 }
+
+
+
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    border: 2px solid black; /* Black border */
+    padding: 20px;
+    text-align: center;
+    width: 45%; /* Adjust width as needed */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.box h1 {
+    margin-bottom: 15px;
+}
+
+.box button {
+    background-color: #007bff; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.box button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
