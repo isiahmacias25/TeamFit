@@ -153,8 +153,14 @@ footer {
 }
 
 
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px; 
+}
+
  .responsive-image{
-                width:40%;
-                height:75%;
+                width: 50%; 
+                height: auto; 
                 }
 
