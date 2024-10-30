@@ -154,12 +154,9 @@ footer {
 
 
 .image-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(2, 1fr); 
-    width: 10%; 
+    
 }
-}
+
 
  .responsive-image {
     width: 50%; 
