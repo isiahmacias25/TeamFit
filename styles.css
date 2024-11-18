@@ -31,7 +31,7 @@ header h1 {
     flex-direction: column;
     background-color: none; /* Optional: adjust as needed */
     position: absolute;
-    top: 50px; /* Adjust based on your header height */
+    top: 200px; /* Adjust based on your header height */
     left: 0;
     width: 100%; /* Full-width dropdown */
     padding: 10px 0;
