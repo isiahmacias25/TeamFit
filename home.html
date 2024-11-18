@@ -9,26 +9,25 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="menu-icon" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 
-        <center>
-            <h1> Home Page </h1>
-        </center>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="History/history.html">History</a></li>
-                <li><a href="Progress/progress.html">Progress</a></li>
-                <li><a href="Team/team.html">Team</a></li>
-                <li><a href="login.html">Log Out</a></li>
-            </ul>
-        </nav>
-    </header>
-
+    <center>
+        <h1> Home Page </h1>
+    </center>
+    <nav id="navMenu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="History/history.html">History</a></li>
+            <li><a href="Progress/progress.html">Progress</a></li>
+            <li><a href="Team/team.html">Team</a></li>
+            <li><a href="login.html">Log Out</a></li>
+        </ul>
+    </nav>
+</header>
     <!-- Main Content -->
     <div class="container">
         <div class="sidebar"></div>
@@ -41,8 +40,8 @@
         
                 <img src="Photos/Weightroom.jpg" alt="Weightroom" class="responsive-image">
                 <img src="Photos/SHSFootballPride.png" style="float: right; margin-left: 10%;" alt="Football team" class="responsive-image">
-                <img src="Photos/CrossCountry.png" alt="Cross country Team" class"responsive-image">
-                <img src="Photos/wrestling.webp" style="float: right; margin-left: 10%;" alt="Wrestling" class"responsive-image">
+                <img src="Photos/CrossCountry.png" alt="Cross country Team" class="responsive-image">
+                <img src="Photos/wrestling.webp" style="float: right; margin-left: 10%;" alt="Wrestling" class="responsive-image">
             </div>
         </div>
         <div class="sidebar"></div>
@@ -56,11 +55,11 @@
         <p> TeamFit. </p>
     </footer>
 
-<script>
-function toggleMenu() {
-    const navMenu = document.getElementById('navMenu');
-    navMenu.classList.toggle('show');
-}
-</script>
+    <script>
+    function toggleMenu() {
+        const navMenu = document.getElementById('navMenu');
+        navMenu.classList.toggle('show');
+    }
+    </script>
 </body>
 </html>
