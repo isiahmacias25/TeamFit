@@ -84,11 +84,7 @@ footer {
     width: 70%;
     padding: 20px;
 }
-.weightroom-image {
-    width: 10px; 
-    height: 10px; 
-    
-}
+
 
 /* Mobile Menu Handling */
 @media (max-width: 768px) {
@@ -160,10 +156,8 @@ footer {
 
  .responsive-image {
 
-     width: 500px;
-     height: 500px;
-    width: 50%; 
-    height: 25%; 
+     width: 400px;
+     height: 400px;
 }
 
 input[type="text"], input[type="password"] {
