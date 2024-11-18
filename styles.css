@@ -29,9 +29,9 @@ header h1 {
 #navMenu {
     display: none;
     flex-direction: column;
-    background-color: #333; /* Optional: adjust as needed */
+    background-color: none; /* Optional: adjust as needed */
     position: absolute;
-    top: 50px; /* Adjust based on your header height */
+    top: 500px; /* Adjust based on your header height */
     left: 0;
     width: 100%; /* Full-width dropdown */
     padding: 10px 0;
@@ -50,13 +50,13 @@ header h1 {
 }
 
 #navMenu li {
-    margin: 5px 0; /* Adds spacing between menu items */
+    margin: 3px 0; /* Adds spacing between menu items */
 }
 
 #navMenu a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 6px;
     display: block;
     text-align: center;
 }
