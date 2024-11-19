@@ -194,13 +194,22 @@ footer {
 
 
 .image-container {
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
  .responsive-image {
      width: 500px;
      height: 300px;
+}
+
+.centered-image {
+    width: 45%; /* Adjust the width of the centered image */
+    margin: 10px auto; /* Centers it horizontally */
+    display: block; /* Makes it a block-level element for centering */
 }
 
 input[type="text"], input[type="password"] {
