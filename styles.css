@@ -204,7 +204,7 @@ footer {
 
 .centered-image {
    grid-column: 2; /* Position this image in the center column */
-    grid-row: 1 / 3; /* Stretch it over two rows (you can adjust this as needed) */
+    grid-row: 2; /* Stretch it over two rows (you can adjust this as needed) */
 }
 
 input[type="text"], input[type="password"] {
