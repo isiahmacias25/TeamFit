@@ -207,7 +207,6 @@ footer {
  .responsive-image {
      max-width: 300px;
      height: auto;
-     width: 100%;
 }
 
 .centered-image {
