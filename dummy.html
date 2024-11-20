@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Test</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dummy.css">
 </head>
 <body>
     <header>
@@ -26,6 +27,7 @@
 
     <script>
         function toggleMenu() {
+            console.log("Toggle Clicked"); // debug log
             const navMenu = document.getElementById('navMenu');
             navMenu.classList.toggle('show');
         }
