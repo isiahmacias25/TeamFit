@@ -188,18 +188,18 @@ footer {
 
 .image-container {
      display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
-    grid-template-rows: auto; /* Adjust rows automatically */
-    gap: 10px; /* Spacing between the images */
+     grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  grid-template-rows: repeat(3, 1fr);    /* Creates 3 equal rows */
+  gap: 10px; /* Optional: Adds space between grid items */
     justify-items: center; /* Center images horizontally in their grid cells */
     align-items: center; /* Center images vertically in their grid cells */
-    margin: 20px 0;
 }
 
 
- .responsive-image {
-     max-width: 400px;
-     height: 250px;
+ .responsive-image img {
+  width: 100%; /* Ensures images fill the grid cell */
+  height: 100%; /* Ensures images maintain the aspect ratio */
+  object-fit: cover; /* Ensures images are cropped to cover the cell */
 }
 
 .centered-image {
