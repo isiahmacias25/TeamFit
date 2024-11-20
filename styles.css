@@ -196,10 +196,31 @@ footer {
 }
 
 
- .responsive-image img {
+ .responsive-image {
   width: 400px;
   height: 300px; 
   object-fit: cover; /* Ensures images are cropped to cover the cell */
+}
+
+.image-container img:nth-child(1) {
+  grid-column: 1 / 2;  /* Starts at column 1 and ends at column 2 */
+  grid-row: 1 / 2;     /* Starts at row 1 and ends at row 2 */
+}
+.image-container img:nth-child(2) {
+  grid-column: 3 ;  /* Starts at column 1 and ends at column 2 */
+  grid-row: 1 / 2;     /* Starts at row 1 and ends at row 2 */
+}
+.image-container img:nth-child(3) {
+  grid-column: 2 / 3;  /* Starts at column 1 and ends at column 2 */
+  grid-row: 2 / 3;     /* Starts at row 1 and ends at row 2 */
+}
+.image-container img:nth-child(4) {
+  grid-column: 1 / 2;  /* Starts at column 1 and ends at column 2 */
+  grid-row: 3;     /* Starts at row 1 and ends at row 2 */
+}
+.image-container img:nth-child(5) {
+  grid-column: 3;  /* Starts at column 1 and ends at column 2 */
+  grid-row: 3;     /* Starts at row 1 and ends at row 2 */
 }
 
 .centered-image {
