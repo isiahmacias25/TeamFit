@@ -31,6 +31,7 @@
 
 #navMenu a {
     display: block; /* Block-level to ensure full width */
+    float: left;
     text-decoration: none;
     text-align: center;
     color: black;
