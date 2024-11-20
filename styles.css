@@ -197,8 +197,8 @@ footer {
 
 
  .responsive-image img {
-  width: 100%; /* Ensures images fill the grid cell */
-  height: 100%; /* Ensures images maintain the aspect ratio */
+  width: 400px;
+  height: 300px; 
   object-fit: cover; /* Ensures images are cropped to cover the cell */
 }
 
