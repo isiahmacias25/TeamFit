@@ -37,6 +37,7 @@ header h1 {
     padding: 0;
 }
 
+
 /* Show the menu when the "show" class is added */
 #navMenu.show {
     display: block;
@@ -51,7 +52,6 @@ header h1 {
 
 #navMenu li {
     margin: 3px 0; /* Adds spacing between menu items */
-    display: block;
 }
 
 #navMenu a {
@@ -59,7 +59,7 @@ header h1 {
     text-decoration: none;
     padding: 16px;
     display: block;
-    text-align: center;
+    text-align: LEFT;
 }
 
 .menu-icon {
