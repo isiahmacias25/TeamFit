@@ -195,7 +195,6 @@ HTML, body {
 
 
 .image-container {
-    width: 1200px;    /* Set width */
   height: 1000px
      display: grid;
      grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
