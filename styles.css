@@ -187,8 +187,8 @@ footer {
 
 
 .image-container {
-    width: 1000px;    /* Set width */
-  height: 700px
+    width: 1200px;    /* Set width */
+  height: 1000px
      display: grid;
      grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
   grid-template-rows: repeat(3, 1fr);    /* Creates 3 equal rows */
@@ -199,8 +199,8 @@ footer {
 
 
  .responsive-image {
-  width: 300px;
-  height: 200px; 
+  width: 400px;
+  height: 300px; 
   object-fit: cover; /* Ensures images are cropped to cover the cell */
 }
 
