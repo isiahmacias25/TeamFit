@@ -5,112 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeamFit - Home Page</title> 
     <link href="styles.css" rel="stylesheet" > <!-- Link to the CSS file -->
+    <script> href="functions.js" </script>
 </head>
 <body>
     <!-- Header -->
     <header>
-    <div class="menu-icon" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <center>
-        <h1> Home Page </h1>
-    </center>
-    
-</header>
-    <!-- Main Content -->
- <div class="container">
-    <div class="sidebar">
-        <nav id="navMenu">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="History/history.html">History</a></li>
-            <li><a href="Progress/progress.html">Progress</a></li>
-            <li><a href="Team/team.html">Team</a></li>
-            <li><a href="login.html">Log Out</a></li>
-        </ul>
-        </nav>
-    </div>
-     <div class="content">
-
-            <h1>Welcome to TeamFit</h1>
-            <p>Your personal and team fitness tracker.</p>
-         
-            <div class="image-container">
-                <img src="Photos/Weightroom.jpg" alt="Weightroom" class="responsive-image">
-                <img src="Photos/SHSFootballPride.png"  alt="Football team" class="responsive-image">
-                <img src="Photos/Fit.png" alt= "logo" class"centered-image">
-                <img src="Photos/CrossCountry.png" alt="Cross country Team" class="responsive-image">
-                <img src="Photos/wrestling.webp"  alt="Wrestling" class="responsive-image">
-            </div>
-        
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-      <div class="sidebar"></div>    
-    </div>
+        <center>
+            <h1> Home Page </h1>
+        </center>
+    </header>
+    <!-- Main Content -->
+     <div class="container">
+        <div class="sidebar">
+            <nav id="navMenu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="History/history.html">History</a></li>
+                <li><a href="Progress/progress.html">Progress</a></li>
+                <li><a href="Team/team.html">Team</a></li>
+                <li><a href="login.html">Log Out</a></li>
+            </ul>
+            </nav>
+        </div>
+         <div class="content">
+    
+                <h1>Welcome to TeamFit</h1>
+                <p>Your personal and team fitness tracker.</p>
+             
+                <div class="image-container">
+                    <img src="Photos/Weightroom.jpg" alt="Weightroom" class="responsive-image">
+                    <img src="Photos/SHSFootballPride.png"  alt="Football team" class="responsive-image">
+                    <img src="Photos/Fit.png" alt= "logo" class"centered-image">
+                    <img src="Photos/CrossCountry.png" alt="Cross country Team" class="responsive-image">
+                    <img src="Photos/wrestling.webp"  alt="Wrestling" class="responsive-image">
+                </div>
+
+             
+            </div>
+          <div class="sidebar"></div>    
+        </div>
 
     <!-- Footer -->
     <footer>
         <p> TeamFit. </p>
     </footer>
-<style>
-        /* Hide the menu by default */
-        #navMenu {
-            display: none; /* Initially hidden */
-            position: absolute;
-            top: 50px; /* Adjust based on the hamburger position */
-            left: 0;
-            width: 100%; /* Full width of the screen */
-        }
-        /* Show the menu when the "show" class is added */
-        #navMenu.show {
-            display: block; /* Make it visible */
-        }
 
-
-        /* Vertical list styling */
-        #navMenu ul {
-            list-style: none; /* Remove bullets */
-            margin: 50px;
-            padding: 0;
-        }
-
-
-        #navMenu li {
-            margin: 10px 0; /* Spacing between items */
-        }
-
-
-        #navMenu a {
-            display: block; /* Block-level to ensure vertical stacking */
-            text-decoration: underline;
-            text-align: LEFT;
-            color: white;
-            font-size: 24px;
-        }
-
-
-        /* Hamburger menu styling */
-        .menu-icon {
-            display: flex;
-            flex-direction: column;
-            cursor: pointer;
-        }
-
-
-        .menu-icon div {
-            background-color: white;
-            height: 4px;
-            margin: 3px 0;
-            width: 30px;
-        }
-    </style>
-    
-    <script>
-        function toggleMenu() {
-            const navMenu = document.getElementById('navMenu');
-            navMenu.classList.toggle('show');
-        }
-    </script>
 </body>
 </html>
