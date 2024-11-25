@@ -161,18 +161,23 @@ HTML, body {
 
 
 
-
 .progress-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 20px; /* Adjust as needed */
 }
 
 .box {
-    border: 2px solid black; /* Black border */
-    padding: 20px;
-    text-align: center;
     width: 45%; /* Adjust width as needed */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    border: 1px solid #ccc; /* Optional: add a border */
+    padding: 20px;
+    text-align: center; /* Center content in the box */
+    background-color: #f9f9f9; /* Optional: background color */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow */
+}
+
 }
 
 .box h1 {
