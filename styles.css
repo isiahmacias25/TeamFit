@@ -203,7 +203,6 @@ HTML, body {
      display: grid;
      grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
   grid-template-rows: repeat(3, 1fr);    /* Creates 3 equal rows */
-  gap: 10px; /* Optional: Adds space between grid items */
     justify-items: center; /* Center images horizontally in their grid cells */
     align-items: center; /* Center images vertically in their grid cells */
 }
@@ -211,8 +210,7 @@ HTML, body {
 
  .responsive-image {
   width: 400px;
-  height: 200px; 
-  object-fit: cover; /* Ensures images are cropped to cover the cell */
+  height: 300px; 
 }
 
 .image-container img:nth-child(1) {
