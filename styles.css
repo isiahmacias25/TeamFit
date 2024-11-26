@@ -211,7 +211,7 @@ HTML, body {
 
  .responsive-image {
   width: 400px;
-  height: 300px; 
+  height: 200px; 
   object-fit: cover; /* Ensures images are cropped to cover the cell */
 }
 
