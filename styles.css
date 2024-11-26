@@ -123,6 +123,7 @@ HTML, body {
     width: 15%; /* Allow it to fill the container height */
     position: sticky;
     top: 0;
+    height: auto
     
 }
 
