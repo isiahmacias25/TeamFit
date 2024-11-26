@@ -120,8 +120,7 @@ HTML, body {
 
 .sidebar {
     background-color: #00008B;
-    width: 15%;
-    height: auto; /* Allow it to fill the container height */
+    width: 15%; /* Allow it to fill the container height */
     position: sticky;
     top: 0;
     
