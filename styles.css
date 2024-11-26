@@ -202,8 +202,8 @@ HTML, body {
 
 .image-container {
      display: grid;
-     grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
-  grid-template-rows: repeat(3, 1fr);    /* Creates 3 equal rows */
+      grid-template-columns: repeat(3, 450px); /* Creates 3 equal columns */
+  grid-template-rows: repeat(3, 400px);    /* Creates 3 equal rows */
     justify-items: center; /* Center images horizontally in their grid cells */
     align-items: center; /* Center images vertically in their grid cells */
 }
