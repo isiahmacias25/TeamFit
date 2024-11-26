@@ -121,7 +121,7 @@ HTML, body {
 .sidebar {
     background-color: #00008B;
     width: 15%; /* Allow it to fill the container height */
-    position: sticky;
+    position: fixed;
     top: 0;
     
 }
