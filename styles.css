@@ -237,12 +237,14 @@ HTML, body {
   grid-column: 1 / 2;  /* Starts at column 1 and ends at column 2 */
   grid-row: 3;     /* Starts at row 1 and ends at row 2 */ 
     margin-up: 50px;
+    z-index: 4;
 }
 .image-container img:nth-child(5) {
   grid-column: 3;  /* Starts at column 1 and ends at column 2 */
   grid-row: 3;     /* Starts at row 1 and ends at row 2 */
     margin-right: 20px;
     margin-up: 50px;
+    z-index: 5;
 }
 
 
