@@ -27,7 +27,7 @@ header h1 {
  /* Hide the menu by default */
         #navMenu {
             display: none; /* Initially hidden */
-            position: absolute;
+            position: sticky;
             top: 50px; /* Adjust based on the hamburger position */
             left: 0;
             width: 100%; /* Full width of the screen */
