@@ -4,8 +4,7 @@ function toggleMenu() {
     navMenu.classList.toggle('show');
 }
 
-<script>
-    // Example data for demonstration purposes
+// Example data for demonstration purposes
     const mockData = {
       "TEAM123": {
         name: "Wildcats",
@@ -61,4 +60,3 @@ function toggleMenu() {
         document.getElementById("membersList").style.display = "none";
       }
     });
-  </script>
