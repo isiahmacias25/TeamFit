@@ -31,8 +31,127 @@
         </div>
         <div class="content">
 
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-            
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"], input[type="number"], input[type="email"], button {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    .team-info, .members-list {
+      margin-top: 20px;
+    }
+
+    .team-info {
+      background: #f1f1f1;
+      border-left: 4px solid #007bff;
+      padding: 15px;
+      border-radius: 4px;
+    }
+
+    .team-info h3 {
+      margin-bottom: 10px;
+    }
+
+    .members-list ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .members-list li {
+      background: #e7f3ff;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 600px) {
+      button {
+        font-size: 14px;
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Join a Team</h1>
+    <p>Use the code provided by your administrator (coach/advisor) to join your team and view details.</p>
+    <form id="joinTeamForm">
+      <div class="form-group">
+        <label for="teamCode">Team Code</label>
+        <input type="text" id="teamCode" placeholder="Enter your team code" required>
+      </div>
+      <button type="submit">Join Team</button>
+    </form>
+
+    <div class="team-info" id="teamInfo" style="display: none;">
+      <h3>Team Information</h3>
+      <p><strong>Team Name:</strong> <span id="teamName">N/A</span></p>
+      <p><strong>Sport:</strong> <span id="teamSport">N/A</span></p>
+      <p><strong>Coach/Advisor:</strong> <span id="teamCoach">N/A</span></p>
+    </div>
+
+    <div class="members-list" id="membersList" style="display: none;">
+      <h3>Team Members</h3>
+      <ul id="teamMembers">
+        <!-- Members will be dynamically inserted here -->
+      </ul>
+    </div>
+
+      
+  </div>
         </div>
         <div class="sidebar"></div>
     </div>
