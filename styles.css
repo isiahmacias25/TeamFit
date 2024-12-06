@@ -58,7 +58,7 @@ header h1 {
         flex-direction: row;
     }
 
-.progress-container {
+.box-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
