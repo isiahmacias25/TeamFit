@@ -6,9 +6,10 @@ header h1 {
         #navMenu {
             display: none; /* Initially hidden */
             position: sticky;
-            top: 50px; /* Adjust based on the hamburger position */
+            top: 75px; /* Adjust based on the hamburger position */
             left: 0;
             width: 100%; /* Full width of the screen */
+            positon: fixed;
         }
         /* Show the menu when the "show" class is added */
         #navMenu.show {
