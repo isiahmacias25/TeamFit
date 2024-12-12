@@ -7,6 +7,66 @@
     <link rel="stylesheet" href="../styles.css"> <!-- Link to the CSS file -->
     <link href="../layout.css" rel="stylesheet" >
     <script src="../functions.js"></script>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        section {
+            margin: 2em 0;
+            background: #fff;
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            margin-bottom: 1em;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .input-group {
+            margin-bottom: 1em;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .chart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            margin-bottom: 1em;
+        }
+        .badge {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 0.5em 1em;
+            margin-right: 0.5em;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+
 </head>
 <body>
     <!-- Header -->
@@ -36,9 +96,65 @@
             </nav>
         </div>
         <div class="content">
+
+
+            <div class="container">
+            <section>
+            <h2 class="section-title">Log Your Workout</h2>
+            <form>
+                <div class="input-group">
+                    <label for="activity">Activity</label>
+                    <input type="text" id="activity" name="activity" placeholder="e.g., Running, Squats">
+                </div>
+                <div class="input-group">
+                    <label for="weight">Weight (lbs)</label>
+                    <input type="number" id="weight" name="weight">
+                </div>
+                <div class="input-group">
+                    <label for="reps">Reps</label>
+                    <input type="number" id="reps" name="reps">
+                </div>
+                <div class="input-group">
+                    <label for="time">Time (minutes)</label>
+                    <input type="number" id="time" name="time">
+                </div>
+                <div class="input-group">
+                    <label for="laps">Laps (if applicable)</label>
+                    <input type="number" id="laps" name="laps">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section>
+            <h2 class="section-title">Your Progress</h2>
+            <div class="chart" id="individual-chart">
+                <!-- Placeholder for individual progress pie chart -->
+                <p>Individual Progress Chart</p>
+            </div>
+            <h3>Goals</h3>
+            <ul>
+                <li>Goal 1: <strong>Run 5 miles in 40 minutes</strong></li>
+                <li>Goal 2: <strong>Lift 200 lbs</strong></li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="section-title">Team Progress</h2>
+            <div class="chart" id="team-chart">
+                <!-- Placeholder for team progress pie chart -->
+                <p>Team Progress Chart</p>
+            </div>
+            <p>Percentage of team goals achieved: 75%</p>
+        </section>
+        <section>
+            <h2 class="section-title">Badges Earned</h2>
+            <span class="badge">5K Run Complete</span>
+            <span class="badge">100 Push-Ups Done</span>
+        </section>
+    </div>
+
+
             
-    <h1> Personal Progress </h1>
-          
+  
         </div>
         <div class="sidebar"></div>
      </div>
