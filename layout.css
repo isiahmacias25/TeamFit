@@ -45,12 +45,12 @@ HTML, body {
 
 .sidebar {
     background-color: #00008B;
-    width: 15%; /* Allow it to fill the container height */
+    width: 10%; /* Allow it to fill the container height */
     height: auto
     
 }
 
 .content {
-    width: 70%;
+    width: 80%;
     padding: 20px;
 }
