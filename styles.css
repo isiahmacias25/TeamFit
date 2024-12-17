@@ -152,7 +152,7 @@ input[type="text"], input[type="password"] {
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-button {
+personal&team-button {
             width: 35%;
             padding: 10px;
             background-color: #007BFF;
@@ -161,3 +161,13 @@ button {
             border-radius: 5px;
             cursor: pointer;
         }
+
+login-button{
+            width: 100%;
+            padding: 10px;
+            background-color: #00BFFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+}
