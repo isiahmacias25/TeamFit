@@ -40,7 +40,7 @@
 
 <body class="personal-progress-body">
 
-    <div class="personal-progress-container">
+      <div class="personal-progress-container">
         <section class="personal-progress-section">
             <h2 class="personal-progress-section-title">Log Your Running Workout</h2>
             <form>
@@ -75,6 +75,24 @@
                     <input type="number" id="reps" name="reps" min="0">
                 </div>
                 <button type="submit">Submit Lifting Workout</button>
+            </form>
+        </section>
+        <section class="personal-progress-section">
+            <h2 class="personal-progress-section-title">Coach's Assigned Workouts</h2>
+            <form>
+                <div class="personal-progress-input-group">
+                    <label for="assigned-workout">Workout</label>
+                    <input type="text" id="assigned-workout" name="assigned-workout" placeholder="e.g., 3-mile run, 10 push-ups">
+                </div>
+                <div class="personal-progress-input-group">
+                    <label for="workout-info">Your Info</label>
+                    <input type="text" id="workout-info" name="workout-info" placeholder="e.g., Completed in 25 minutes">
+                </div>
+                <div class="personal-progress-input-group">
+                    <label for="workout-complete">Mark Complete</label>
+                    <input type="checkbox" id="workout-complete" name="workout-complete">
+                </div>
+                <button type="submit">Update Workout Progress</button>
             </form>
         </section>
         <section class="personal-progress-section">
