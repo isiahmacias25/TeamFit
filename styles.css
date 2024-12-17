@@ -152,7 +152,7 @@ input[type="text"], input[type="password"] {
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-personal&team-button {
+personal_team-button {
             width: 35%;
             padding: 10px;
             background-color: #007BFF;
