@@ -144,22 +144,12 @@ header h1 {
     z-index: 5;
 }
 
-
 input[type="text"], input[type="password"] {
             width: 90%;
             padding: 10px;
             margin: 10px 0;
             border: 1px solid #ccc;
             border-radius: 5px;
-        }
-personal_team-button {
-            width: 35%;
-            padding: 10px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
         }
 
 login-button{
