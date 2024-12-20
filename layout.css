@@ -22,6 +22,7 @@ header {
 
 #centered-title {
     margin: 0; /* Removes any default margins */
+    text-align: center;
 }
 /* Sticky Footer */
 footer {
