@@ -20,6 +20,9 @@ header {
     align-items: center;
 }
 
+#centered-title {
+    margin: 0; /* Removes any default margins */
+}
 /* Sticky Footer */
 footer {
     background-color: #000;
