@@ -13,6 +13,8 @@ $conn = new mysqli($host, $username, $password, $database);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+else (!$conn->connect_error) {
+    echo "connection succeeded";
 
 // Check if form data has been submitted
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
