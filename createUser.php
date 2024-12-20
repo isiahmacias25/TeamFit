@@ -1,43 +1,34 @@
 <?php
-
 // Database connection details
-$host = "65.24.35.108:3360"; // Host address with port
-$username = "WebApp";        // Database username
-$password = "BPAteam123";    // Database password
-$database = "schoolTeams";   // Database name
+$host = "65.24.35.108:3306";
+$dbname = "shcoolTeams";
+$username = "WebApp";
+$password = "BPAteam123";
 
-// Create connection
-$conn = new mysqli($host, $username, $password, $database);
+try {
+    // Establish a connection to the MySQL database
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-else (!$conn->connect_error) {
-    echo "connection succeeded";
+    // Check if the form data was submitted
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $user = $_POST["username"];
+        $pass = password_hash($_POST["password"], PASSWORD_DEFAULT); // Hash the password
 
-// Check if form data has been submitted
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Get user data from form
-    $newUsername = $_POST['username'];
-    $newPassword = $_POST['password'];
+        // Prepare the SQL statement to insert the new user
+        $sql = "INSERT INTO users (username, password) VALUES (:username, :password)";
+        $stmt = $pdo->prepare($sql);
+        $stmt->bindParam(":username", $user);
+        $stmt->bindParam(":password", $pass);
 
-    // Sanitize input (important!)
-    $newUsername = mysqli_real_escape_string($conn, $newUsername);
-    $newPassword = mysqli_real_escape_string($conn, $newPassword);
-
-    // Create user query
-    $sql = "CREATE USER '$newUsername'@'%' IDENTIFIED BY '$newPassword'";
-
-    if ($conn->query($sql) === TRUE) {
-        echo "New user created successfully!";
-    } else {
-        echo "Error creating user: " . $conn->error;
+        // Execute the query
+        if ($stmt->execute()) {
+            echo "Account created successfully!";
+        } else {
+            echo "Error creating account.";
+        }
     }
+} catch (PDOException $e) {
+    echo "Database error: " . $e->getMessage();
 }
-
-// Close connection
-$conn->close();
-
 ?>
-
