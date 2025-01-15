@@ -3,7 +3,7 @@ session_start();  // Start the session to store user information
 
 // Database connection details
 $host = "65.24.35.108:3306";
-$dbname = "schoolTeams";  // This is your current database
+$dbname = "School";  // This is your current database
 $adminUsername = "WebApp";  // Use an account with CREATE USER privilege
 $adminPassword = "BPAteam123";
 
