@@ -7,7 +7,7 @@ if (!isset($_SESSION['username']) || !isset($_SESSION['password'])) {
 }
 
 $host = "65.24.35.108:3306";
-$dbname = "schoolTeams";
+$dbname = "School";
 $username = $_SESSION['username'];
 $password = $_SESSION['password'];
 
