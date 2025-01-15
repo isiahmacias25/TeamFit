@@ -18,14 +18,16 @@ try {
         $_SESSION['password'] = $password;
 
         echo "Login successful! Redirecting...";
-        header("Location: /TeamFit-main/Coach/home.html");  // Redirect to the data viewing page
+         header("Location: /TeamFit-main/Coach/home.html");  // Redirect to the data viewing page
         exit;
     }
 } catch (PDOException $e) {
+
     echo "Database error: " . $e->getMessage();
 
     sleep(4);
 
-    Header("Location: /TeamFit-main/login.html");
+    Header("Location: /TeamFit-main/failedLog.html");
+
 }
 ?>
