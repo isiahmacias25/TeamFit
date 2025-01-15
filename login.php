@@ -2,7 +2,7 @@
 session_start();  // Start the session to store user information
 
 $host = "65.24.35.108:3306";
-$dbname = "schoolTeams";
+$dbname = "School";
 
 try {
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
